@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+        
+              .JavascriptType {
+                  padding: 70px ; 
+                  padding-top: 2px;
+                  color: purple;
+                  font-size: 30px;
+                  
+                      
+              }
+        
+        
+        
+    </style>
+    </head>
+  
+    <body>
+        <h1 style="font-size:35px ; padding: 70px ; color: blue ; padding-bottom: 10px " 
+            > Choose Javascript type </h1>
+        
+        <div class = "JavascriptType">
+            Choose Javascript type  : <select name ="JavascriptTypes" style="font-size:25px" id="JavascriptTypes">
+                
+                <option value ="Addition" > Addition </option>
+                <option value ="Subtraction" > Subtraction  </option>
+                <option value ="Reverse" > Reverse  </option>
+                <option value ="Multiplication" > Multiplication </option>
+                <option value ="Division" > Division </option>
+                <option value ="palindrome" > palindrome  </option>
+                 <option value ="repeat" > repeat  </option>
+                <option value ="Radio button" > Radio button  </option>
+                 <option value ="Checkbox" > Checkbox  </option>
+                </select><br>
+        
+                
+                <button id="SelectedJavascriptTypes" style="background-color:wheat">
+               Select
+            </button>
+        </div>
+        
+        
+    </body>
+    <script>
+        
+         var SelectBtn = document.getElementById('SelectedJavascriptTypes');
+         
+        SelectBtn.addEventListener('click', function () {
+            var choosenTypes = document.getElementById("JavascriptTypes").value;
+            switch (choosenTypes) {
+  case "Addition" :
+      window.open("Addition.html" , "_blank");
+    break;
+    
+        case "Subtraction" :
+            
+     window.open("Subtraction.html" , "_blank");
+    break;
+    
+    case "Reverse" :
+            
+     window.open("Reverse.html" , "_blank");
+    break;
+    
+    case "Multiplication" :
+            
+     window.open("Multiplication.html" , "_blank");
+    break;
+    
+     case "Division" :
+            
+     window.open("Division.html" , "_blank");
+    break;
+    
+    case "palindrome" :
+            
+     window.open("palindrome.html" , "_blank");
+    break;
+    
+     case "repeat" :
+            
+     window.open("repeat.html" , "_blank");
+    break;
+    
+     case "Radio button" :
+            
+     window.open("Radio button.html" , "_blank");
+    break;
+    
+     case "Checkbox" :
+            
+     window.open("Checkbox.html" , "_blank");
+    break;
+    
+    
+    }
+            
+        });
+        
+        
+        
+    </script>
+</html>

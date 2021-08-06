@@ -1,0 +1,534 @@
+    <!DOCTYPE html>
+<html>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+
+        body>section{
+            display: inline-block;
+            width: 40%;
+        }
+
+
+
+
+    </style>
+
+<!-- Adding section-->
+
+    <body style="text-align:center;  ">
+        <section>
+            <section style="flex:1">
+
+                <span style="font-weight:bold">
+                    value 1 =  
+
+
+                </span> 
+                <input type="number" id="value1"  />
+                <br>
+                <span style = "color:orange">
+
+                    value 2 =
+                </span>
+                <input type="number" id="value2" />
+                <br>
+                <button id="add" style="background-color:orchid">
+                    Add
+                </button>
+            </section>
+            <section id="add-result" style="margin-bottom: 100px ">
+
+            </section>
+        </section>    
+        
+        
+       <!-- Subtract Section--> 
+        
+       <section>
+        <section>
+            <span style="font-weight:bold" >
+                value 1 =  
+
+            </span> 
+            <input type="number" id="value3"  />
+            <br>
+            <span style = "color:orange">
+
+                value 2 =
+            </span>
+            <input type="number" id="value4" />
+            <br>
+            <button id="Subtract" style="background-color:orchid">
+                Subtract 
+            </button>
+        </section>
+       <section id="subtract-result" style="padding:30px;">
+
+        </section>
+       </section>
+       
+         <!-- Reverse Section--> 
+        
+         <section>
+        <section >
+           
+            <span style = "color:orange">
+
+                Text =
+            </span>
+            <input type="text" id="text" />
+            <br>
+            <button id="Reverse" style="background-color:orchid">
+                Reverse 
+            </button>
+        </section>
+        <section id="reverse-result" style="padding:30px;">
+
+        </section>
+         </section>
+         
+         
+          <!-- Multiply Section--> 
+        
+          <section>
+        
+        <section >
+           
+           <span style="font-weight:bold" >
+                value 1 =  
+
+            </span> 
+            <input type="number" id="Multiplyvalue1"  />
+            <br>
+            <span style = "color:orange">
+
+                value 2 =
+            </span>
+            <input type="number" id="Multiplyvalue2" />
+            <br>
+            <button id="Multiply" style="background-color:orchid">
+                Multiply 
+            </button>
+        </section>
+          
+       <section id="Multiply-result" style="padding:30px;">
+
+
+        </section>
+              </section>
+         
+       
+           
+
+  <!-- Divide Section--> 
+  <section>
+        
+        <section >
+           
+           <span style="font-weight:bold" >
+                value 1 =  
+
+            </span> 
+            <input type="number" id="Dividevalue1"  />
+            <br>
+            <span style = "color:orange">
+
+                value 2 =
+            </span>
+            <input type="number" id="Dividevalue2" />
+            <br>
+            <button id="Divide" style="background-color:orchid">
+                Divide
+            </button>
+        </section>
+          
+       <section id="Divide-result" style="padding:30px;">
+
+
+        </section>
+         
+  </section>
+       
+    
+
+    
+     <!-- palindrome Section--> 
+    
+     <section>
+        
+        <section >
+           
+            <span style = "color:orange">
+
+                Text =
+            </span>
+            <input type="text" id="word1" />
+            <br>
+            <button id="palindrome" style="background-color:orchid">
+                palindrome? 
+            </button>
+        </section>
+        <section id="palindrome-result" style="padding:30px;">
+
+        </section>
+       
+     </section>
+     
+     
+     
+      <!-- Repeat Section--> 
+     <section>
+        
+        <section >
+           
+            <span style = "color:orange">
+
+                Text =
+            </span>
+            <input type="text" id="wordToRepeat" />
+            <br>
+             <span style = "color:orange">
+
+                Times to repeat =
+            </span>
+            <input type="number" id="TimesToRepeat" />
+            <br>
+            <button id="repeat" style="background-color:orchid">
+               repeat  
+            </button>
+        </section>
+        <section id="repeat-result" style="padding:30px;">
+         
+        </section>
+       
+     </section>
+     
+     
+    </body>
+    
+     <!-- Degree to Fahrenheit Section--> 
+     <section>
+        
+        <section >
+           
+            <span style = "color:orange">
+
+                Temperature  = 
+            </span>
+            <input type="number" id="TemperatureInDegree" />
+            <br>
+  <input type="radio" id="Degree" name="gender" value="Degree">
+  <label for="Degree">Degree</label><br>
+  <input type="radio" id="Fahrenheit" name="gender" value="Fahrenheit">
+  <label for="Fahrenheit">Fahrenheit</label><br>
+  
+
+            <button id="convert" style="background-color:orchid">
+               convert  
+            </button>
+        </section>
+        <section id="Temperature-result" style="padding:30px;">
+         
+        </section>
+       
+     </section>
+     
+      <!-- Checkbox--> 
+      
+     <section>
+        
+        <section >
+           
+           <input type="checkbox" id="bike" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Car" name="vehicle1" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="Boat" name="vehicle1" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+
+            <button id="checkedall" style="background-color:green">
+               Check all vehicles 
+            </button>
+  <button id="uncheckedall" style="background-color:red">
+               Uncheck all vehicles 
+            </button>
+        </section>
+        <section id="Checkbox-result" style="padding:30px;">
+         
+        </section>
+  <button id="checkedVehicles" style="background-color:red">
+               checked vehicles 
+            </button>
+     </section>
+      
+      <form>
+      fullname:  <input type="text" name="fullname" size="20"
+                              placeholder ="Enter your full name" required
+                              maxlength ="100" autofocus
+                              /> <br> 
+            Marital status:  <input type="text" name="Marital Status" size="20"
+                              placeholder ="Enter your Marital Status" required
+                              maxlength ="100" autofocus
+                              /> <br> 
+            Work experience : </br> 
+            <input type ="radio" name = "work" value = "Y" />Yes </br>
+             <input type ="radio" name = "work" value = "N" />No </br>
+            
+               Residential address :  <input type="text" name="Residental address" size="20"
+                              placeholder ="Enter your Residental address" required
+                              maxlength ="100" autofocus
+                              /> <br> 
+               
+                Home phone: <input type="number" name="home number" min="1" max="8" placeholder="12345678"/>
+                <br>
+                pizza flavour  : <select name ="pizza flavour">
+                <option value ="1" > Hawaiian $10.00 </option>
+                <option value ="2" > Meat Monster $12.00 </option>
+                <option value ="3" > Cheese Royale $8.00 </option>
+                <option value ="4" > Chilli Beef Hotdog $15.00 </option>
+                </select><br>
+                
+                 pizza Crust  : <select name ="pizza crust"> 
+                <option value ="1" > thin crust </option>
+                <option value ="2" > stuffed crust </option>
+                <option value ="3" > cheesy volcano </option>
+                 </select><br>
+                
+                 Extra topping : <input type = "checkbox" name = "parmesan cheese"  value = "PC" /> parmesan cheese
+            <input type = "checkbox" name = "chilli flakes" value = "CF" /> chilli flakes
+            <input type = "checkbox" name = "include delivery menu with order" value = "DWO" />"include delivery menu with order"  <br>
+            <br>
+                
+             customer's Remarks : <textarea rows ="4" cols="50">
+ 
+            </textarea> <br>
+            <input type ="submit" value =" Order"/>
+            <input type ="reset" value ="Reset" />
+            </form>
+      
+     
+    </body>
+    
+    <script>
+
+        var addBtn = document.getElementById('add');
+        console.log(addBtn);
+        addBtn.addEventListener('click', function () {
+            var value1 = parseInt(document.getElementById('value1').value);
+            var value2 = parseInt(document.getElementById('value2').value);
+            var sum = addition(value1, value2);
+            var addBtnresult = document.getElementById('add-result');
+            addBtnresult.innerHTML = "The result of the 2 sum is " + sum;
+
+
+        });
+
+        function addition(a, b) {
+            return a + b;
+        }
+
+        var SubtractBtn = document.getElementById('Subtract');
+        console.log(SubtractBtn);
+        SubtractBtn.addEventListener('click', function () {
+            var valueSubtract1 = parseInt(document.getElementById('value3').value);
+            var valueSubtract2 = parseInt(document.getElementById('value4').value);
+            var subtract = sub(valueSubtract1, valueSubtract2);
+            var SubtractBtnresult = document.getElementById('subtract-result');
+            SubtractBtnresult.innerHTML = "The difference of the 2 number is " + subtract;
+
+
+        });
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+   var ReverseBtn = document.getElementById('Reverse');
+        ReverseBtn.addEventListener('click', function () {
+            var word = document.getElementById('text').value;
+            var ReverseBtnresult = document.getElementById('reverse-result');
+            ReverseBtnresult.innerHTML = "The word is " + reverse(word);
+
+
+        });
+
+        function reverse(a) {
+            var reverseStr = '';
+for (var i=a.length - 1 ; i>=0; i--){
+  reverseStr = reverseStr + a[i];
+}
+            return reverseStr;
+        }
+
+var MultiplyBtn = document.getElementById('Multiply');
+        MultiplyBtn.addEventListener('click', function () {
+            var valueMultiply1 = parseInt(document.getElementById('Multiplyvalue1').value);
+            var valueMultiply2 = parseInt(document.getElementById('Multiplyvalue2').value);
+            var MultiplicationValue = Multiplication(valueMultiply1, valueMultiply2);
+            var MultiplyBtnresult = document.getElementById('Multiply-result');
+            MultiplyBtnresult.innerHTML = "The Multiplication of the 2 number is " + MultiplicationValue;
+
+
+        });
+
+        function Multiplication(a, b) {
+            return a * b;
+        }
+var divisionBtn = document.getElementById('Divide');
+        divisionBtn.addEventListener('click', function () {
+            var valueD1 = parseInt(document.getElementById('Dividevalue1').value);
+            var valueD2 = parseInt(document.getElementById('Dividevalue2').value);
+            var DivisonValue = division(valueD1, valueD2);
+            var divideBtnresult = document.getElementById('Divide-result');
+            divideBtnresult.innerHTML = "The division of the 2 number is " + DivisonValue;
+
+
+        });
+
+        function division(a, b) {
+            return a / b;
+        }
+        
+        
+        var PalindromeBtn = document.getElementById('palindrome');
+        PalindromeBtn.addEventListener('click', function () {
+             var word = document.getElementById('word1').value;
+            var TextValue = reverseString(word);
+            if(TextValue == word){
+                 var PalindromeBtnresult = document.getElementById('palindrome-result');
+            PalindromeBtnresult.innerHTML = "The text is palindrome ";
+            }else{
+                 var PalindromeBtnresult = document.getElementById('palindrome-result');
+                PalindromeBtnresult.innerHTML = "The text is not a palindrome ";
+            }
+           
+
+
+        });
+
+        function reverseString(a) {
+            var rev = "";
+            
+            for(var i = a.length - 1; i>=0 ; i--){
+                rev = rev + a[i];
+                
+            }
+             
+            return rev;
+            
+        }
+        
+        var RepeatBtn = document.getElementById('repeat');
+        RepeatBtn.addEventListener('click', function () {
+            var wordstorepeat = document.getElementById('wordToRepeat').value;
+            var timestorepeat = parseInt(document.getElementById('TimesToRepeat').value);
+             var repeatValue = RepeatValue(wordstorepeat,timestorepeat);
+            var repeatBtnresult = document.getElementById('repeat-result');
+            repeatBtnresult.innerHTML = repeatValue;
+            
+
+        });
+ function RepeatValue(a,b) {
+           var rp = "";
+            for(var i = 1;i<=b;i++){
+                rp = rp + a;
+                
+                
+            }
+            
+             
+            return rp;
+            
+        }
+        
+         var ConvertBtn = document.getElementById('convert');
+        ConvertBtn.addEventListener('click', function () {
+            var D = document.getElementById('TemperatureInDegree').value;
+            var Degreebtn = document.getElementById('Degree');
+             var Fahrenheitbtn = document.getElementById('Fahrenheit');
+             var ConvertedValue = 0;
+             if  (Degreebtn.checked == true) {
+                 ConvertedValue = DtoF(D);
+             }else if (Fahrenheitbtn.checked == true){
+                  ConvertedValue = FtoD(D );
+             }
+             
+            var Tempresult = document.getElementById('Temperature-result');
+            Tempresult.innerHTML = ConvertedValue;
+            
+
+        });
+ function DtoF(a) {
+           var coveretedTempInD = 0;
+         coveretedTempInD = (a * 9/5) + 32;
+            
+             
+            return coveretedTempInD;
+            
+        }
+        
+function FtoD(b) {
+           var coveretedTempInF = 0;
+         coveretedTempInF = (b - 32) * 5/9 ;
+            
+             
+            return coveretedTempInF;
+            
+        }
+        
+            
+        
+        
+        
+        
+   var CheckAllBtn = document.getElementById('checkedall');
+   var UnCheckAllBtn = document.getElementById('uncheckedall');
+        var BikecheckBox = document.getElementById("bike");
+         var CarcheckBox = document.getElementById("Car");
+          var boatcheckBox = document.getElementById("Boat");
+         var checkedV = document.getElementById("checkedVehicles");
+         checkedV.addEventListener('click', function(){
+             var checkedBoxes = document.querySelectorAll('input[name=vehicle1]:checked');
+             
+                var checkboxescheck = [];
+                for ( var i = 0 ; i < checkedBoxes.length ; i++ ) {
+                    checkboxescheck.push(checkedBoxes[i].value);
+                    
+                }
+                alert(checkboxescheck.toString());
+         });
+        
+   var checkboxresult = document.getElementById('Checkbox-result');
+
+CheckAllBtn.addEventListener('click', function () {
+   
+   uncheckElements(true);
+    
+});
+UnCheckAllBtn.addEventListener('click', function () {
+   
+   uncheckElements(false);
+   
+    
+});
+
+function uncheckElements( checked )
+{
+ var uncheck=document.getElementsByTagName('input');
+ for(var i=0;i<uncheck.length;i++)
+ {
+  if(uncheck[i].type=='checkbox')
+  {
+   uncheck[i].checked=checked;
+  }
+ }
+}
+  
+     
+    </script>
+</html> 
+
+

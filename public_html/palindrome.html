@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body style="text-align:center; padding-top: 50px "> 
+        
+        
+        <section>
+        
+        <section >
+           
+            <span style = "color:orange">
+
+                Text =
+            </span>
+            <input type="text" id="word1" />
+            <br>
+            <button id="palindrome" style="background-color:orchid">
+                palindrome? 
+            </button>
+        </section>
+        <section id="palindrome-result" style="padding:30px;">
+
+        </section>
+       
+     </section>
+        
+        
+    </body>
+    <script>
+        
+        var PalindromeBtn = document.getElementById('palindrome');
+        PalindromeBtn.addEventListener('click', function () {
+             var word = document.getElementById('word1').value;
+            var TextValue = reverseString(word);
+            if(TextValue == word){
+                 var PalindromeBtnresult = document.getElementById('palindrome-result');
+            PalindromeBtnresult.innerHTML = "The text is palindrome ";
+            }else{
+                 var PalindromeBtnresult = document.getElementById('palindrome-result');
+                PalindromeBtnresult.innerHTML = "The text is not a palindrome ";
+            }
+           
+
+
+        });
+
+        function reverseString(a) {
+            var rev = "";
+            
+            for(var i = a.length - 1; i>=0 ; i--){
+                rev = rev + a[i];
+                
+            }
+             
+            return rev;
+            
+        }
+        
+        
+        
+        
+    </script>
+</html>

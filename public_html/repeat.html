@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta c harset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+     <body style="text-align:center; padding-top: 50px "> 
+        
+        <section>
+        
+        <section >
+           
+            <span style = "color:orange">
+
+                Text =
+            </span>
+            <input type="text" id="wordToRepeat" />
+            <br>
+             <span style = "color:orange">
+
+                Times to repeat =
+            </span>
+            <input type="number" id="TimesToRepeat" />
+            <br>
+            <button id="repeat" style="background-color:orchid">
+               repeat  
+            </button>
+        </section>
+        <section id="repeat-result" style="padding:30px;">
+         
+        </section>
+       
+     </section>
+        
+    </body>
+    
+    <script>
+        
+         var RepeatBtn = document.getElementById('repeat');
+        RepeatBtn.addEventListener('click', function () {
+            var wordstorepeat = document.getElementById('wordToRepeat').value;
+            var timestorepeat = parseInt(document.getElementById('TimesToRepeat').value);
+             var repeatValue = RepeatValue(wordstorepeat,timestorepeat);
+            var repeatBtnresult = document.getElementById('repeat-result');
+            repeatBtnresult.innerHTML = repeatValue;
+            
+
+        });
+ function RepeatValue(a,b) {
+           var rp = "";
+            for(var i = 1;i<=b;i++){
+                rp = rp + a;
+                
+                
+            }
+            
+             
+            return rp;
+            
+        }
+        
+        
+        
+        
+    </script>
+    
+</html>

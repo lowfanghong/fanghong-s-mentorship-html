@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body style="text-align:center; padding-top: 50px ">        
+        
+            <section>
+        
+        <section >
+           
+           <span style="font-weight:bold" >
+                value 1 =  
+
+            </span> 
+            <input type="number" id="Dividevalue1"  />
+            <br>
+            <span style = "color:orange">
+
+                value 2 =
+            </span>
+            <input type="number" id="Dividevalue2" />
+            <br>
+            <button id="Divide" style="background-color:orchid">
+                Divide
+            </button>
+        </section>
+          
+       <section id="Divide-result" style="padding:30px;">
+
+
+        </section>
+         
+  </section>
+        
+    </body>
+    <script>
+        var divisionBtn = document.getElementById('Divide');
+        divisionBtn.addEventListener('click', function () {
+            var valueD1 = parseInt(document.getElementById('Dividevalue1').value);
+            var valueD2 = parseInt(document.getElementById('Dividevalue2').value);
+            var DivisonValue = division(valueD1, valueD2);
+            var divideBtnresult = document.getElementById('Divide-result');
+            divideBtnresult.innerHTML = "The division of the 2 number is " + DivisonValue;
+
+
+        });
+
+        function division(a, b) {
+            return a / b;
+        }
+        
+        
+        
+        
+    </script>
+    
+</html>

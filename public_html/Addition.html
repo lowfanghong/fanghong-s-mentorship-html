@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="text-align:center; padding-top: 50px ">
+        
+        
+        <section>
+            <section style="flex:1">
+
+                <span style="font-weight:bold">
+                    value 1 =  
+
+
+                </span> 
+                <input type="number" id="value1"  />
+                <br>
+                <span style = "color:orange">
+
+                    value 2 =
+                </span>
+                <input type="number" id="value2" />
+                <br>
+                <button id="add" style="background-color:orchid; margin-top: 60px  ">
+                    Add
+                </button>
+            </section>
+            <section id="add-result" style="margin-bottom: 100px ">
+
+            </section>
+        </section>    
+        
+        
+        
+        
+        
+    </body>
+        <script>
+            
+      var addBtn = document.getElementById('add');
+        console.log(addBtn);
+        addBtn.addEventListener('click', function () {
+            var value1 = parseInt(document.getElementById('value1').value);
+            var value2 = parseInt(document.getElementById('value2').value);
+            var sum = addition(value1, value2);
+            var addBtnresult = document.getElementById('add-result');
+            addBtnresult.innerHTML = "The result of the 2 sum is " + sum;
+
+
+        });
+
+        function addition(a, b) {
+            return a + b;
+        }
+    
+    
+    
+    </script>
+    
+</html>

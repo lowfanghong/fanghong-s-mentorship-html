@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body style="text-align:center; padding-top: 50px ">
+        
+         <section>
+        <section>
+            <span style="font-weight:bold" >
+                value 1 =  
+
+            </span> 
+            <input type="number" id="value3"  />
+            <br>
+            <span style = "color:orange">
+
+                value 2 =
+            </span>
+            <input type="number" id="value4" />
+            <br>
+            <button id="Subtract" style="background-color:orchid">
+                Subtract 
+            </button>
+        </section>
+       <section id="subtract-result" style="padding:30px;">
+
+        </section>
+       </section>
+        
+        
+    </body>
+    <script>
+     var SubtractBtn = document.getElementById('Subtract');
+        console.log(SubtractBtn);
+        SubtractBtn.addEventListener('click', function () {
+            var valueSubtract1 = parseInt(document.getElementById('value3').value);
+            var valueSubtract2 = parseInt(document.getElementById('value4').value);
+            var subtract = sub(valueSubtract1, valueSubtract2);
+            var SubtractBtnresult = document.getElementById('subtract-result');
+            SubtractBtnresult.innerHTML = "The difference of the 2 number is " + subtract;
+
+
+        });
+
+        function sub(a, b) {
+            return a - b;
+        }
+    
+   </script> 
+</html>

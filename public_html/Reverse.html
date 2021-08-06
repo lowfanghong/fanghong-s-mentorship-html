@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="text-align:center; padding-top: 50px ">
+        
+           <section>
+        <section >
+           
+            <span style = "color:orange">
+
+                Text =
+            </span>
+            <input type="text" id="text" />
+            <br>
+            <button id="Reverse" style="background-color:orchid">
+                Reverse 
+            </button>
+        </section>
+        <section id="reverse-result" style="padding:30px;">
+
+        </section>
+         </section>
+        
+        
+        
+    </body>
+    <script>
+        
+          var ReverseBtn = document.getElementById('Reverse');
+        ReverseBtn.addEventListener('click', function () {
+            var word = document.getElementById('text').value;
+            var ReverseBtnresult = document.getElementById('reverse-result');
+            ReverseBtnresult.innerHTML = "The word is " + reverse(word);
+
+
+        });
+
+        function reverse(a) {
+            var reverseStr = '';
+for (var i=a.length - 1 ; i>=0; i--){
+  reverseStr = reverseStr + a[i];
+}
+            return reverseStr;
+        }
+        
+    </script>
+  
+</html>

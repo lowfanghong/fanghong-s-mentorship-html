@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body style="text-align:center; padding-top: 50px "> 
+        <section>
+        
+        <section >
+           
+           <input type="checkbox" id="bike" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="Car" name="vehicle1" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="Boat" name="vehicle1" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+
+            <button id="checkedall" style="background-color:green">
+               Check all vehicles 
+            </button>
+  <button id="uncheckedall" style="background-color:red">
+               Uncheck all vehicles 
+            </button>
+        </section>
+        <section id="Checkbox-result" style="padding:30px;">
+         
+        </section>
+  <button id="checkedVehicles" style="background-color:red">
+               checked vehicles 
+            </button>
+     </section>
+      
+    </body>
+    <script>
+            
+        
+        
+   var CheckAllBtn = document.getElementById('checkedall');
+   var UnCheckAllBtn = document.getElementById('uncheckedall');
+        var BikecheckBox = document.getElementById("bike");
+         var CarcheckBox = document.getElementById("Car");
+          var boatcheckBox = document.getElementById("Boat");
+         var checkedV = document.getElementById("checkedVehicles");
+         checkedV.addEventListener('click', function(){
+             var checkedBoxes = document.querySelectorAll('input[name=vehicle1]:checked');
+             
+                var checkboxescheck = [];
+                for ( var i = 0 ; i < checkedBoxes.length ; i++ ) {
+                    checkboxescheck.push(checkedBoxes[i].value);
+                    
+                }
+                alert(checkboxescheck.toString());
+         });
+        
+   var checkboxresult = document.getElementById('Checkbox-result');
+
+CheckAllBtn.addEventListener('click', function () {
+   
+   uncheckElements(true);
+    
+});
+UnCheckAllBtn.addEventListener('click', function () {
+   
+   uncheckElements(false);
+   
+    
+});
+
+function uncheckElements( checked )
+{
+ var uncheck=document.getElementsByTagName('input');
+ for(var i=0;i<uncheck.length;i++)
+ {
+  if(uncheck[i].type=='checkbox')
+  {
+   uncheck[i].checked=checked;
+  }
+ }
+}
+        
+        
+        
+    </script>
+    
+</html>

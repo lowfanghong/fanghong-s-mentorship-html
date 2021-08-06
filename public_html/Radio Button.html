@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body style="text-align:center; padding-top: 50px "> 
+        
+        
+        <section>
+        
+        <section >
+           
+            <span style = "color:orange">
+
+                Temperature  = 
+            </span>
+            <input type="number" id="TemperatureInDegree" />
+            <br>
+  <input type="radio" id="Degree" name="gender" value="Degree">
+  <label for="Degree">Degree</label><br>
+  <input type="radio" id="Fahrenheit" name="gender" value="Fahrenheit">
+  <label for="Fahrenheit">Fahrenheit</label><br>
+  
+
+            <button id="convert" style="background-color:orchid">
+               convert  
+            </button>
+        </section>
+        <section id="Temperature-result" style="padding:30px;">
+         
+        </section>
+       
+     </section>
+
+        
+        
+        
+    </body>
+    <script>
+        
+      var ConvertBtn = document.getElementById('convert');
+        ConvertBtn.addEventListener('click', function () {
+            var D = document.getElementById('TemperatureInDegree').value;
+            var Degreebtn = document.getElementById('Degree');
+             var Fahrenheitbtn = document.getElementById('Fahrenheit');
+             var ConvertedValue = 0;
+             if  (Degreebtn.checked == true) {
+                 ConvertedValue = DtoF(D);
+             }else if (Fahrenheitbtn.checked == true){
+                  ConvertedValue = FtoD(D );
+             }
+             
+            var Tempresult = document.getElementById('Temperature-result');
+            Tempresult.innerHTML = ConvertedValue;
+            
+
+        });
+ function DtoF(a) {
+           var coveretedTempInD = 0;
+         coveretedTempInD = (a * 9/5) + 32;
+            
+             
+            return coveretedTempInD;
+            
+        }
+        
+function FtoD(b) {
+           var coveretedTempInF = 0;
+         coveretedTempInF = (b - 32) * 5/9 ;
+            
+             
+            return coveretedTempInF;
+            
+        }
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    </script>
+    
+</html>
